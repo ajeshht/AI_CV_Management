@@ -1,86 +1,23 @@
-# =========================
 # Python
-# =========================
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.pdb
-*.pkl
-*.egg-info/
-*.eggs/
-*.manifest
-*.spec
-.env
-.venv/
-env/
 venv/
-ENV/
-env.bak/
-venv.bak/
+env/
 
-# =========================
-# Virtual Environment
-# =========================
-# If you named your venv something else, add it below:
-myenv/
-AI_CV_Project_venv/
-
-# =========================
-# Flask
-# =========================
-instance/
-*.db
-*.sqlite3
-*.log
-
-# =========================
-# Google Cloud Credentials
-# =========================
-
-*.json
-google-credentials.json
-service-account.json
+# API Keys and Secrets
 credentials.json
+gemini_key.txt
+twilio_credentials.json
+openai_key.txt
+*.key
+*.pem
 
-# =========================
-# Twilio / API Keys
-# =========================
-.twilio.env
-api_keys.env
+# Environment
+.env
+.env.local
 
-# =========================
-# VS Code / IDE
-# =========================
+# IDE
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 
-# =========================
-# OS Generated Files
-# =========================
+# OS
 .DS_Store
-Thumbs.db
-ehthumbs.db
-Icon?
-__MACOSX/
-
-# =========================
-# ngrok
-# =========================
-ngrok.log
-.ngrok2/
-.ngrok/
-*.yaml
-
-# =========================
-# Misc
-# =========================
-*.bak
-*.tmp
-*.swp
-*.orig
-logs/
-uploads/
-cache/
