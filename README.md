@@ -1,4 +1,4 @@
-# WhatsApp Resume Parser 🤖
+# AI Based WhatsApp CV Parser 🤖
 
 A smart WhatsApp bot that automatically extracts information from resumes and saves it to Google Sheets using AI.
 
@@ -38,6 +38,48 @@ A smart WhatsApp bot that automatically extracts information from resumes and sa
 ### Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone 
-   cd whatsapp-resume-parser
+   ```
+   git clone https://github.com/ajeshht/AI_CV_Management.git
+   cd AI_CV_Management
+2. **Create virtual environment**
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+3. **Install dependencies**
+   ```
+   pip install -r requirements.txt
+4. **Set up environment variables**
+   ```
+   # Copy the example environment file
+      cp .env.example .env
+Edit .env file with your credentials
+   ```
+   # Google Sheets
+   SHEET_ID=your_google_sheet_id_here
+   SERVICE_ACCOUNT_FILE=credentials.json
+
+   # Gemini AI
+   GEMINI_API_KEY=your_gemini_api_key_here
+
+   # Twilio
+   TWILIO_ACCOUNT_SID=your_twilio_account_sid
+   TWILIO_AUTH_TOKEN=your_twilio_auth_token
+
+```
+5.**Set up credentials**
+   Download Google Service Account JSON and save as credentials.json
+
+   Get Gemini API key from Google AI Studio
+
+   Get Twilio credentials from Twilio Console
+6. Run the application
+   ```
+   python app.py
+```
+Project Structure 📁
+   whatsapp-resume-parser/
+   ├── app.py                 # Main Flask application
+   ├── requirements.txt       # Python dependencies
+   ├── .env.example          # Environment variables template
+   ├── .gitignore           # Git ignore rules
+   └── README.md            # This file
