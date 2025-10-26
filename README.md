@@ -77,6 +77,7 @@ Edit .env file with your credentials
    python app.py
 ```
 Project Structure 📁
+```
    whatsapp-resume-parser/
    ├── app.py                 # Main Flask application
    ├── requirements.txt       # Python dependencies
